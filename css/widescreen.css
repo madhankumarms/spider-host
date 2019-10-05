@@ -1,0 +1,43 @@
+/* Section: servicees  */
+
+/* line up the service content  */
+@media (min-width: 450px){
+#service .items {
+    flex-direction: column;
+    /* align-items: baseline; */
+    /* margin-left: 12.5rem; */
+}
+
+/* align icons to left  */
+#service .items .item {
+    display: flex;
+    text-align: left;
+}
+
+#service .items .item i {
+    align-self: center;
+    margin-bottom: 0;
+}
+
+#service .items .item:hover {
+    box-shadow: none;
+    transform: none;
+}
+
+#about .teamDetails .teamPics img {
+    width: 60%;
+}
+}
+
+#about .teamDetails .teamPics img {
+    width: 30%;
+}
+
+#contact .map {
+    flex: 2;
+}
+
+.l-heading {
+    font-size: 3.5rem;
+}
+

@@ -1,0 +1,263 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/* Basic styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Montserrat,Arial,sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+/* Utility Styles */
+
+.text-primary {color: rgb(214, 70, 70);}
+.text-center {text-align: center;}
+.l-heading {font-size: 4rem;}
+.m-heading {font-size: 2rem;}
+.sm-heading {font-size: 1.7rem;}
+
+.bg-light {
+    background: #fff;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #eee;
+}
+
+.bg-primary {
+    background: rgb(214, 70, 70);
+    color: #fff;
+}
+
+.py-1 {padding: 1.5rem .75rem;}
+.py-2 {padding: 2rem;}
+.py-3 {padding: 3rem;}
+
+.btn {
+    display: inline-block;
+    /* width: 100%; */
+    background: rgb(214, 70, 70);
+    color: #fff;
+    font-weight: bold;
+    padding: .6rem 1rem;
+    margin: .75rem .5rem;
+    border: none;
+    border-radius: 5px;
+    transition: all .1s;
+}
+
+.btn-dark {
+    background: #333;
+    color: #fff;
+    width: 100%;
+}
+
+.btn-dark:hover {
+    background: #444 !important;
+    transform: scale(1) !important;
+}
+
+.btn:hover {
+    background: rgb(223, 70, 70);
+    transform: scale(1.1);
+}
+
+/* Navbar */
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    /* background: rgb(207, 47, 47); */
+    color: #fff;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    flex: 1;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+#navbar ul li a {
+    padding: .3rem .3rem;
+    margin: 0 1.2rem;
+    color: #fff;
+    transition: all 0.1s;
+}
+
+#navbar ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+#navbar ul li a.btn{
+    border: none;
+}
+
+.navbar-scroll {
+    background: rgb(207, 47, 47) !important;
+}
+
+/* Showcase  */
+
+#showcase {
+    background: url('../img/showcase.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+
+#showcase .showcase-content {
+    display: flex;
+    color: #eee;
+    padding: 0 2rem;
+    flex-direction: column;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    line-height: 1.2;
+    /* Overlay style  */
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Section - Services  */
+#service {
+    text-align: center;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+#service .items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 1rem 2rem;
+    padding: 2rem;
+}
+
+#service .items .item {
+    background: #fff;
+    padding: 1rem;
+    flex: 1;
+    margin: .1rem;
+    border-radius: 5px;
+    transition: box-shadow .5s;
+    cursor: pointer;
+}
+
+#service .items .item i {
+    background: rgb(214, 70, 70);
+    padding: .7rem;
+    border-radius: 50%;
+    color: #fff;
+}
+
+#service .items .item:hover {
+    box-shadow: 0 0 15px .01px black;
+    transform: scale(1.03);
+}
+
+#about {
+    text-align: center;
+}
+
+#about .teamDetails {
+    padding: 3rem 2rem;
+}
+
+#about .teamDetails p {
+    font-size: 1.1rem;
+    padding: 0 3rem;
+    line-height: 1.5;
+}
+
+#about .teamDetails .teamPics {
+    margin: 2rem 8rem;
+    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+#about .teamDetails .teamPics img {
+    padding: 1rem;
+    flex: 1;
+    width: 30%;
+    border-radius: 50px;
+}
+
+#about .teamDetails .teamPics img:last-child {
+    display: none;
+}
+
+/* Section - Clients  */
+#clients {
+    margin-bottom: 3rem;
+}
+
+#clients .company-logos {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 5rem;
+}
+
+#clients .company-logos img {
+    width: 8%;
+}
+
+/* Section - Contact  */
+#contact {
+    display: flex;
+}
+
+#contact .map, #contact .contact-form {
+    flex: 1;
+}
+
+#contact .contact-form .form-group {
+    margin: 0.5rem 0;
+}
+
+#contact .contact-form .form-group label {
+    display: block;
+    margin-bottom: .2rem;
+}
+
+#contact .contact-form .form-group input, 
+#contact .contact-form .form-group textarea{
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+/* @media only screen and (max-width: 805px){
+    .l-heading{font-size: 2.8rem !important;}
+    #showcase .showcase-content {
+        text-align: left;
+    }
+} */
+
